@@ -44,9 +44,7 @@ function listContacts(name, email, city) {
             contact.name = userSplit[0];
             contact.city = userSplit[1];
             contact.email = userSplit[2];
-            contacts.unshift(contact);
-            console.log(contacts);
-            console.log(shapes);
+            contacts.push(contact);
             let newDiv = document.createElement('div');
             let displayName = document.createElement('p');
             displayName.classList.add('para')
@@ -66,7 +64,7 @@ function listContacts(name, email, city) {
 
             newDiv.classList.add('square');
             newDiv.style.backgroundColor = "#1a1d28";
-            shapes.unshift(newDiv);
+            shapes.push(newDiv);
             updateArray(contacts);
             bigBox.appendChild(newDiv);
 

@@ -60,6 +60,7 @@
   text-align: left;
   color: #fff;
   padding: 10px 15px;
+  border: 1px solid rgba(100, 218, 96, 0.9);
   animation: animate .3s ease-in-out;
   cursor: pointer;
 }
@@ -101,6 +102,7 @@ input[type="text"] {
   font-weight: 600;
   color: #000;
   text-align: left;
+  text-indent: 10px;
   background: #fff ;
   background-size: 15px;
   transition: border-color 0.25s ease-in-out;
