@@ -29,37 +29,43 @@
     margin-top: 20px;
    }
 
-
-
 .center {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: grid;
+    padding: 20px;
     justify-content: center;
     place-items: center;
+    text-align: center;
 
 }
 
+.para{
+  color: #fff;
+  font-size: 12px;
+}
+
 .big-box {
-  /* background-color: #1a1d28; */
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows:  repeat(3 , 300px);
-  /* transform: rotateX(180deg); */
-  grid-template-rows: 100px;
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
   padding: 10px;
 }
 
 
 .square {
-  height: 100px;
-  width: 300px;
+  position: relative;
+  text-align: left;
+  color: #fff;
+  padding: 10px 15px;
   animation: animate .3s ease-in-out;
   cursor: pointer;
 }
 
 
-.btn {
+.btn , .btn2 {
   margin-top: 30px;
   font-size: 15px;
   display: inline-block;
@@ -67,11 +73,17 @@
   text-align: center;
   line-height: 40px;
   width: 140px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 1px solid --app-green;
   background-color: var(--app-green);
   color: #fff;
   cursor: pointer;
+}
+.btn2 {
+  position: fixed;
+  width: 200px;
+  bottom: 20px;
+  right: 20px;
 }
 
 
@@ -92,6 +104,10 @@ input[type="text"] {
   background: #fff ;
   background-size: 15px;
   transition: border-color 0.25s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+padding: 10px;
 }
 
 input[type="text"]:focus {

@@ -40,9 +40,6 @@ class Contact {
         return this.#email;
     }
 
-    getInfo(){
-        return `${this.name} ${this.city} ${this.email} `;
-    }
 }
 
 export {Contact};
