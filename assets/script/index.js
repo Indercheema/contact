@@ -6,7 +6,7 @@
 
 */
 import { onEvent, getElement, select } from "./utils.js";
-import { Shape } from "./Contact";
+import { Contact } from "./Contact";
 
 
 
@@ -29,7 +29,7 @@ const myColors = {
     purple: "#90f"
 };
 
-function createDiv() {
+function listContacts() {
     let count = 0;
     const shapes = [];
     if (count >= 15)
@@ -50,7 +50,7 @@ count += 1;
 
 onEvent('click', btn, function (event) {
     event.preventDefault();
-    createDiv();
+    listContacts();
    
 });
 

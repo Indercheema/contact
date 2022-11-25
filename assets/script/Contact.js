@@ -6,31 +6,43 @@
 
 */
 
-class Shape{
-    constructor(name, color) {
-        this._name = name;
-        this._color = color;
+class Contact {
+    #name;
+    #city;
+    #email;
+    constructor(name, city, email ) {
+        this.#name = name;
+        this.#city = city;
+        this.#email = email;
     }
 
-    getColor(){
-        return this._color;
+    set name(val){
+        this.#name = val;
     }
 
-    setColor(val){
-        this._color = val;
+    get name() {
+        return this.#name;
     }
 
-    getName(){
-        return this._name;
+    set city(val){
+        this.#city = val;
     }
 
-    setName(val){
-        this._name = val;
+    get city() {
+        return this.#city;
+    }
+
+    set email(val){
+        this.#email = val;
+    }
+
+    get email() {
+        return this.#email;
     }
 
     getInfo(){
-        return `${this._color} ${this._name}`;
+        return `${this.name} ${this.city} ${this.email} `;
     }
 }
 
-export {Shape};
+export {Contact};
