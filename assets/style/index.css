@@ -1,0 +1,118 @@
+@import "./reset.css";
+
+
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+   }
+
+   
+.container {
+  width: min(100% - 30px, 1380px);
+  margin-inline: auto;
+}
+
+   body {
+    background-color: #000;
+    height: calc(100vh - 20px);
+   }
+
+   h2 , form ,p{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+   }
+
+
+
+.center {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+
+}
+
+.big-box {
+  /* background-color: #1a1d28; */
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows:  repeat(3 , 300px);
+  /* transform: rotateX(180deg); */
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+.square {
+  height: 100px;
+  width: 300px;
+  animation: animate .3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.btn {
+  margin-top: 30px;
+  font-size: 15px;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  border: 1px solid --app-green;
+  background-color: var(--app-green);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #0035e9;
+  transition: background-color 0.1s ease-in-out;
+}
+
+input[type="text"] {
+  width: 400px;
+  /* padding: 20px; */
+  line-height: 40px;
+  border: 1px solid #a9a9a9 ;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #000;
+  text-align: left;
+  background: #fff ;
+  background-size: 15px;
+  transition: border-color 0.25s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+
+button {
+  margin-left: 20px;
+}
+
+
+@keyframes animate {
+  from {
+      opacity: 0;
+      transform: translateY(12px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
