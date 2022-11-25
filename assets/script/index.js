@@ -17,10 +17,6 @@ const input = select('.input');
 const bigBox = select('.big-box');
 const emailRegex = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$/;
 
-// onEvent('click' , btn, function(event){
-//     event.preventDefault();
-//     info.innerText = 'working';
-// });
 const shapes = [];
 let contacts = [];
 
@@ -87,7 +83,7 @@ function listContacts(name, email, city) {
         }
 
     } else {
-        showInfo.innerText = 'Please enter name, city, email'
+        showInfo.innerText = 'Please Provide name, city, email'
     }
 
 

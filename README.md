@@ -1,3 +1,3 @@
-## Shape Factory
+## My Contacts
 
-[Check out here](https://indercheema.github.io/shape-factory/)
+[Check out here](https://indercheema.github.io/contact/)
